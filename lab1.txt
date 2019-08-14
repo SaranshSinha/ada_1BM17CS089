@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+void bin_search(int n);
+int main()
+{
+    int x;
+    cout<<"enter the number";
+    cin>>x;
+    cout<<"square root using binary search:";
+    bin_search(x);
+    return 0;
+
+}
+void bin_search(int n)
+{
+    int mid,l=1,h;
+    h=n;
+    while(l<=h)
+    {
+        mid=(l+h)/2;
+        if((mid*mid==n)||((mid*mid<n)&&(mid+1)*(mid+1)>n))
+        {
+         cout<<mid;
+         return;
+
+        }
+        else if(mid*mid<n)
+            l=mid+1;
+        else
+            h=mid-1;
+
+    }
+    cout<<mid;
+
+}
