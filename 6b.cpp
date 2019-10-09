@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<conio.h>
 const int n=4;
 int indegree[n];
 int a[n][n]={0};
