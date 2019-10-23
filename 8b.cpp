@@ -40,7 +40,7 @@ void findSmallestRange(int **arr, int n, int k)
 			} 
 		} 
 
-		Program exited with return code: 0
+		
 
 		if(flag) 
 			break; 
@@ -61,7 +61,7 @@ void findSmallestRange(int **arr, int n, int k)
 
 int main() 
 {
-	int k;
+	int k,N;
 	cout<<"enter the value of k: ";
 	cin>>k;
 	cout<<"\nenter the size of arrays";
